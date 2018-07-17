@@ -1,10 +1,13 @@
 {
-  "executionRoleArn": null,
+  "family": "console-sample-app",
+  "volumes": [],
   "containerDefinitions": [
     {
-      "dnsSearchDomains": null,
-      "logConfiguration": null,
-      "entryPoint": [],
+      "environment": [],
+      "name": "simple-app",
+      "image": "npmmmdocker/hbnode:init",
+      "cpu": 10,
+      "memory": 500,
       "portMappings": [
         {
           "hostPort": 80,
@@ -17,45 +20,9 @@
           "containerPort": 3000
         }
       ],
-      "command": [],
-      "linuxParameters": null,
-      "cpu": 10,
-      "environment": [],
-      "ulimits": null,
-      "dnsServers": null,
       "mountPoints": [],
-      "workingDirectory": null,
-      "dockerSecurityOptions": null,
-      "memory": 300,
-      "memoryReservation": null,
-      "volumesFrom": [],
-      "image": "npmmmdocker/hbnode:init",
-      "disableNetworking": null,
-      "healthCheck": null,
-      "essential": true,
-      "links": [],
-      "hostname": null,
-      "extraHosts": null,
-      "user": null,
-      "readonlyRootFilesystem": null,
-      "dockerLabels": null,
-      "privileged": null,
-      "name": "simple-app"
+      "entryPoint": [],
+      "essential": true
     }
-  ],
-  "placementConstraints": [],
-  "memory": null,
-  "taskRoleArn": null,
-  "compatibilities": [
-    "EC2"
-  ],
-  "taskDefinitionArn": "arn:aws:ecs:ap-northeast-2:415365883687:task-definition/console-sample-app-static:4",
-  "family": "console-sample-app-static",
-  "requiresAttributes": [],
-  "requiresCompatibilities": null,
-  "networkMode": null,
-  "cpu": null,
-  "revision": 4,
-  "status": "ACTIVE",
-  "volumes": []
+  ]
 }
