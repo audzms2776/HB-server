@@ -5,7 +5,7 @@ class Donations {
 Donations.test1 = (callback) => {
     pool.getConnection((err, connection) => {
         if (err) {
-            pool.release();
+            connection.release();
             throw err;
         }
 
