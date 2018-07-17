@@ -1,8 +1,10 @@
 [
   {
-    "dnsSearchDomains": null,
-    "logConfiguration": null,
-    "entryPoint": [],
+    "environment": [],
+    "name": "simple-app",
+    "image": "npmmmdocker/hbnode:init",
+    "cpu": 10,
+    "memory": 500,
     "portMappings": [
       {
         "hostPort": 80,
@@ -15,29 +17,12 @@
         "containerPort": 3000
       }
     ],
-    "command": [],
-    "linuxParameters": null,
-    "cpu": 10,
-    "environment": [],
-    "ulimits": null,
-    "dnsServers": null,
-    "mountPoints": [],
-    "workingDirectory": null,
-    "dockerSecurityOptions": null,
-    "memory": 300,
-    "memoryReservation": null,
-    "volumesFrom": [],
-    "image": "npmmmdocker/hbnode:init",
-    "disableNetworking": null,
-    "healthCheck": null,
-    "essential": true,
-    "links": [],
-    "hostname": null,
-    "extraHosts": null,
-    "user": null,
-    "readonlyRootFilesystem": null,
-    "dockerLabels": null,
-    "privileged": null,
-    "name": "simple-app"
+    "mountPoints": [
+
+    ],
+    "entryPoint": [
+
+    ],
+    "essential": true
   }
 ]
