@@ -18,7 +18,7 @@ Donations.test1 = (callback) => {
             console.log(rows);
             connection.release();
 
-            return callback(null, rows);
+            return callback(null, rows[0]);
         });
     });
 };
