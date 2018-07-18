@@ -18,7 +18,7 @@ Donations.test1 = (callback) => {
             console.log(rows);
             connection.release();
 
-            return callback(null, {'love13333311111': '22111122'});
+            return callback(null, );
         });
     });
 };
